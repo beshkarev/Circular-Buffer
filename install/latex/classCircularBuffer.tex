@@ -1,0 +1,56 @@
+\hypertarget{classCircularBuffer}{}\section{Circular\+Buffer Class Reference}
+\label{classCircularBuffer}\index{Circular\+Buffer@{Circular\+Buffer}}
+
+
+{\ttfamily \#include $<$circular\+Buffer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularBuffer_a8c5de0e610bb50bac684f4707e23431c}{Circular\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{classCircularBuffer_a581f918b98d088089f4db7c26c89860a}{push\+Message}} (char $\ast$message)
+\item 
+const char $\ast$ \mbox{\hyperlink{classCircularBuffer_a1f3e0cad472e639cae523adc485b9454}{pop\+Message}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class of circular buffer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCircularBuffer_a8c5de0e610bb50bac684f4707e23431c}\label{classCircularBuffer_a8c5de0e610bb50bac684f4707e23431c}} 
+\index{Circular\+Buffer@{Circular\+Buffer}!Circular\+Buffer@{Circular\+Buffer}}
+\index{Circular\+Buffer@{Circular\+Buffer}!Circular\+Buffer@{Circular\+Buffer}}
+\subsubsection{\texorpdfstring{Circular\+Buffer()}{CircularBuffer()}}
+{\footnotesize\ttfamily Circular\+Buffer\+::\+Circular\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A constructor. Without parameters. Performs initialization of members. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCircularBuffer_a1f3e0cad472e639cae523adc485b9454}\label{classCircularBuffer_a1f3e0cad472e639cae523adc485b9454}} 
+\index{Circular\+Buffer@{Circular\+Buffer}!pop\+Message@{pop\+Message}}
+\index{pop\+Message@{pop\+Message}!Circular\+Buffer@{Circular\+Buffer}}
+\subsubsection{\texorpdfstring{pop\+Message()}{popMessage()}}
+{\footnotesize\ttfamily const char $\ast$ Circular\+Buffer\+::pop\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The method for poping message from a circular buffer. If the buffer is empty, will returned error message. \begin{DoxyReturn}{Returns}
+A message. A char pointer to the constant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCircularBuffer_a581f918b98d088089f4db7c26c89860a}\label{classCircularBuffer_a581f918b98d088089f4db7c26c89860a}} 
+\index{Circular\+Buffer@{Circular\+Buffer}!push\+Message@{push\+Message}}
+\index{push\+Message@{push\+Message}!Circular\+Buffer@{Circular\+Buffer}}
+\subsubsection{\texorpdfstring{push\+Message()}{pushMessage()}}
+{\footnotesize\ttfamily void Circular\+Buffer\+::push\+Message (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+The method for pushing message to a circular buffer. New messages will remove old messages, if buffer is exhausted. 
+\begin{DoxyParams}{Parameters}
+{\em message} & the pointer to the variable -\/ length array of bytes \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+circular\+Buffer.\+h\item 
+circular\+Buffer.\+cpp\end{DoxyCompactItemize}

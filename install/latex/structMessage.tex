@@ -1,0 +1,56 @@
+\hypertarget{structMessage}{}\section{Message Struct Reference}
+\label{structMessage}\index{Message@{Message}}
+
+
+{\ttfamily \#include $<$circular\+Buffer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMessage_a943bc494704306515fe417a8e8c35fb5}{Message}} (char $\ast$message)
+\item 
+\mbox{\hyperlink{structMessage_a4e0c3e0a2be25186519ba075d7851b71}{Message}} ()=default
+\item 
+const char $\ast$ \mbox{\hyperlink{structMessage_a7b0cfcdc5aa34356b38468b9ac390abb}{get\+Message}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class for message, which will be saved in a circular buffer 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structMessage_a943bc494704306515fe417a8e8c35fb5}\label{structMessage_a943bc494704306515fe417a8e8c35fb5}} 
+\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Message\+::\+Message (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+A constructor. Initialization a vector with a message and a message size, which was calculated from message length. 
+\begin{DoxyParams}{Parameters}
+{\em message} & the pointer to a message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structMessage_a4e0c3e0a2be25186519ba075d7851b71}\label{structMessage_a4e0c3e0a2be25186519ba075d7851b71}} 
+\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Message\+::\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+A default constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structMessage_a7b0cfcdc5aa34356b38468b9ac390abb}\label{structMessage_a7b0cfcdc5aa34356b38468b9ac390abb}} 
+\index{Message@{Message}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!Message@{Message}}
+\subsubsection{\texorpdfstring{get\+Message()}{getMessage()}}
+{\footnotesize\ttfamily const char $\ast$ Message\+::get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The method return stored message. \begin{DoxyReturn}{Returns}
+a message, which was stored in vector during creating an instance of this class 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+circular\+Buffer.\+h\item 
+circular\+Buffer.\+cpp\end{DoxyCompactItemize}
